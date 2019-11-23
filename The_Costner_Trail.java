@@ -13,7 +13,7 @@ public class The_Costner_Trail
         if(choice == 1)
         {
           //this will probably need to be a method too to call value1 "he/she" and value2 "his/her"
-          int gender = 0;
+          String gender = ;
         } 
         else 
         {
@@ -40,18 +40,24 @@ public class The_Costner_Trail
           choice = input.nextInt();
         }
         
+        Quests selectedQuest = new Quest(name, gender)
 
+        if(Choice == 1)
+        {
 
+        }
+        
         
         //This is the begining of tha acutal game logic
-        if(choice == 1){
+        //if(choice == 1){
           //This is where the game is played
-          System.out.println("It's a dark and stormy night as " + name + " drives home from work...\n1.Park car on the street\n2.Park car in garage");
-          choice = input.nextInt();
+         // System.out.println("It's a dark and stormy night as " + name + " drives home from work...\n1.Park car on the street\n2.Park car in garage");
+         // choice = input.nextInt();
           
-        } else if(choice == 2){
+       // } 
+        //else if(choice == 2){
           //this accesses the achive class
-          System.out.println("Achivements and stuff");
-        }
+          //System.out.println("Achivements and stuff");
+        //}
     }
 }
