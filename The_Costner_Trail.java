@@ -1,5 +1,5 @@
 import java.util.*;
-public class the_costner_trail_main
+public class The_Costner_Trail
 {
     public static void main(String[] ars)
     {
