@@ -1,0 +1,11 @@
+TO DO
+1. Main class
+    1. Main me
+2.Quest class
+    1. Quest list / picker
+3.Achievement class
+    1.
+4.Save game class   
+    1.
+
+5.Build plot
