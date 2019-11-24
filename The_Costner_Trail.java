@@ -10,14 +10,15 @@ public class The_Costner_Trail
         String name = input.nextLine();
         System.out.println("1.Male \n2.Female");
         int choice = input.nextInt();
+        int gender;
         if(choice == 1)
         {
           //this will probably need to be a method too to call value1 "he/she" and value2 "his/her"
-          String gender = ;
+          gender = 0;
         } 
         else 
         {
-          //gender = 1;
+          gender = 1;
         }
 
 
@@ -40,11 +41,19 @@ public class The_Costner_Trail
           choice = input.nextInt();
         }
         
-        Quests selectedQuest = new Quest(name, gender)
+        Quests selectedQuest = new Quests(name, gender);
 
-        if(Choice == 1)
+        if(choice == 1)
         {
-
+          selectedQuest.Quest1();
+        }
+        else if(choice == 2)
+        {
+          //Achievements menu
+        }
+        else
+        {
+          System.out.println("Not a valid input. Please try again");
         }
         
         
