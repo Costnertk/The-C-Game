@@ -3,13 +3,13 @@ public class Quests
 {
     //list quests here and select quests here
     private String name;
-    private String gender;
+    private int gender1;
     Scanner input = new Scanner(System.in);
     
-    public Quests(String theName, String theGender)
+    public Quests(String theName, int theGender)
     {
         name = theName;
-        gender = theGender;
+        gender1 = theGender;
     }
 
     //Quest I (Needs name)
@@ -17,15 +17,15 @@ public class Quests
     {
         //Choice 1
         System.out.println("It's a dark and stormy night as " + name + " drives home from work...\n1.Park car on the street\n2.Park car in garage");
-        int userInput = input.nextLine(); 
-        While(true)
+        int userInput = input.nextInt(); 
+        while(true)
         {
             if(userInput == 1)
             {
                 System.out.println("entered1");
                 break;
             }
-            if else(userInput == 2)
+            else if(userInput == 2)
             {
                 System.out.println("entered2");
                 break;
@@ -33,21 +33,21 @@ public class Quests
             else
             {
                 System.out.println("Not a valid Input. Please try again.");
-                userInput = input.nextLine;
+                userInput = input.nextInt();
             }
         }
         
         //Choice 2
         System.out.println("It's a dark and stormy night as " + name + " drives home from work...\n1.Park car on the street\n2.Park car in garage");
-        int userInput = input.nextLine(); 
-        While(true)
+        userInput = input.nextInt(); 
+        while(true)
         {
             if(userInput == 1)
             {
                 System.out.println("entered1");
                 break;
             }
-            if else(userInput == 2)
+            else if(userInput == 2)
             {
                 System.out.println("entered2");
                 break;
@@ -55,21 +55,21 @@ public class Quests
             else
             {
                 System.out.println("Not a valid Input. Please try again.");
-                userInput = input.nextLine;
+                userInput = input.nextInt();
             }
         }
 
         //Choice 3
         System.out.println("It's a dark and stormy night as " + name + " drives home from work...\n1.Park car on the street\n2.Park car in garage");
-        int userInput = input.nextLine(); 
-        While(true)
+        userInput = input.nextInt(); 
+        while(true)
         {
             if(userInput == 1)
             {
                 System.out.println("entered1");
                 break;
             }
-            if else(userInput == 2)
+            else if(userInput == 2)
             {
                 System.out.println("entered2");
                 break;
@@ -77,7 +77,7 @@ public class Quests
             else
             {
                 System.out.println("Not a valid Input. Please try again.");
-                userInput = input.nextLine;
+                userInput = input.nextInt();
             }
         }
     }
