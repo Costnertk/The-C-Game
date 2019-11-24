@@ -3,13 +3,13 @@ public class Quests
 {
     //list quests here and select quests here
     private String name;
-    private int gender1;
+    private int gender;
     Scanner input = new Scanner(System.in);
     
     public Quests(String theName, int theGender)
     {
         name = theName;
-        gender1 = theGender;
+        gender = theGender;
     }
 
     //Quest I (Needs name)
