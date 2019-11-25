@@ -1,6 +1,8 @@
 import java.util.*;
 public class The_Costner_Trail
 {
+  public static int currentQuest = 1;
+
     public static void main(String[] ars)
     {
         Scanner input = new Scanner(System.in);
@@ -35,18 +37,18 @@ public class The_Costner_Trail
         
         //This while statment will be concatonated into its own method because i expect this to be called often
         //this will have parameters for accepted values so that there can be more then two choices
-        while(choice > 2 || choice < 1)
-        {
-          System.out.println("Thats not one of the options\nEnter one of the given choices");
-          choice = input.nextInt();
-        }
+        // while(choice > 2 || choice < 1)
+        // {
+          // System.out.println("Thats not one of the options\nEnter one of the given choices");
+          // choice = input.nextInt();
+        // }
         
         Quests selectedQuest = new Quests(name, gender);
 
         if(choice == 1)
         {
           selectedQuest.Quest1();
-          int currentQuest = 1;
+          currentQuest = 1;
         }
         else if(choice == 2)
         {
@@ -74,10 +76,6 @@ public class The_Costner_Trail
             selectedQuest.Quest4();
           }
           
-          else if(currentQuest == 5)
-          {
-            selectedQuest.Quest5();
-          }
         }
         else
         {
