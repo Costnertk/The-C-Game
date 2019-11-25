@@ -46,6 +46,7 @@ public class The_Costner_Trail
         if(choice == 1)
         {
           selectedQuest.Quest1();
+          int currentQuest = 1;
         }
         else if(choice == 2)
         {
@@ -53,7 +54,30 @@ public class The_Costner_Trail
         }
         else if(choice == 3)
         {
-          //continue at current quest
+          if(currentQuest == 1)
+          {
+            selectedQuest.Quest1();
+          }
+          
+          else if(currentQuest == 2)
+          {
+            selectedQuest.Quest2();
+          }
+          
+          else if(currentQuest == 3)
+          {
+            selectedQuest.Quest3();
+          }
+          
+          else if(currentQuest == 4)
+          {
+            selectedQuest.Quest4());
+          }
+          
+          else if(currentQuest == 5)
+          {
+            selectedQuest.Quest5();
+          }
         }
         else
         {
