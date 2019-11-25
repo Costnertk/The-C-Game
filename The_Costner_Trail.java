@@ -71,7 +71,7 @@ public class The_Costner_Trail
           
           else if(currentQuest == 4)
           {
-            selectedQuest.Quest4());
+            selectedQuest.Quest4();
           }
           
           else if(currentQuest == 5)
