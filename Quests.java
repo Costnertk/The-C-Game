@@ -80,5 +80,7 @@ public class Quests
                 userInput = input.nextInt();
             }
         }
+        //end of quest currentQuest++;
+        currentQuest++;
     }
 }
