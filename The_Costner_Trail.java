@@ -47,6 +47,7 @@ public class The_Costner_Trail
 
         if(choice == 1)
         {
+          //System.out.println("\f"); tried to implemant clear screen;
           selectedQuest.Quest1();
           currentQuest = 1;
         }
