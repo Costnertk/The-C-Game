@@ -81,14 +81,14 @@ public class Quests
             }
         }
         //end of quest currentQuest++;
-        //currentQuest++;
+        The_Costner_Trail.currentQuest++;
     }
 
     //Quest 2
     public void Quest2()
     {
         //Choice 1
-        System.out.println("It's a dark and stormy night as " + name + " drives home from work...\n1.Park car on the street\n2.Park car in garage");
+        System.out.println("quest 2");
         int userInput = input.nextInt(); 
         while(true)
         {
