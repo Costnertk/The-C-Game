@@ -31,7 +31,7 @@ public class The_Costner_Trail
             // this checks to see if i > 1 which means user has complete quest 1 and will be
             // presented with a choice to continue
             System.out.println("Do you want to continue to the next quest?\n(1)Yes\n(2)No");
-            final int continueQuest = input.nextLine();
+            final int continueQuest = input.nextInt();
             if (continueQuest == 1) {
               // this allows the user to continue playing quests until they choose no allowing
               // them to end the game early
