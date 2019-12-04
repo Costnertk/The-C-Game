@@ -15,7 +15,7 @@ public class Quests
         quest = theQuest;
     }
     //restructuring of quests to encapsulate into if() allwoing single quest selecion via main
-    //Quest I (Needs name)
+    //Quest I ("Just the beginning")
     public void Quest1()
     {
         //Choice 1
