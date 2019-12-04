@@ -23,25 +23,7 @@ public class The_Costner_Trail
           gender = 1;
         }
 
-        for (int i = 1; i < 3; i++) {
-          //                ^ this variable here will be updated as the number of quests increases
-          // a for loop is used to make the variable 'i' which is used to itterate through
-          // quests
-          if (i > 1) {
-            // this checks to see if i > 1 which means user has complete quest 1 and will be
-            // presented with a choice to continue
-            System.out.println("Do you want to continue to the next quest?\n(1)Yes\n(2)No");
-            final int continueQuest = input.nextInt();
-            if (continueQuest == 1) {
-              // this allows the user to continue playing quests until they choose no allowing
-              // them to end the game early
-              selectedQuest("name", 1, i);
-            }
-          } else if (i == 1) {
-            // this looks for the first iteration of i when i = 1 and starts quest 1
-            selectedQuest("name", 1, 1);
-          }
-        }
+        
         
         
         System.out.print(" ____________________   ___     ___   ____________\n" + "|                    | |   |   |   | |            |\n" + "|_______     ________| |   |   |   | |   _________|\n" + "        |   |          |   |   |   | |  |\n" + "        |   |          |   |___|   | |  |_________\n" + "        |   |          |           | |            |\n" + "        |   |          |    ___    | |   _________|\n" + "        |   |          |   |   |   | |  |\n" + "        |   |          |   |   |   | |  |_________\n" + "        |   |          |   |   |   | |            |\n" + "        |___|          |___|   |___| |____________|\n" + "\n" + " ____________________      _________________     ____________      ____________________     ____        ____     ____________     ______________\n" + "|                    |    |    _________    |   |            |    |                    |   |     L     |    |   |            |   |              |\n" + "|     _______________|    |   |         |   |   |    ________|    |_______     ________|   |      L    |    |   |   _________|   |    ______    |\n" + "|    |                    |   |         |   |   |   |                     |   |            |    |  L   |    |   |  |             |   |      |   |\n" + "|    |                    |   |         |   |   |   |________             |   |            |    |   L  |    |   |  |_________    |   |______|   |\n" + "|    |                    |   |         |   |   |            |            |   |            |    |L   L |    |   |            |   |          ____|\n" + "|    |                    |   |         |   |   |________    |            |   |            |    | L   L|    |   |   _________|   |   |___   L\n" + "|    |                    |   |         |   |            |   |            |   |            |    |  L   |    |   |  |             |   |   L   L\n" + "|    |_______________     |   |         |   |    ________|   |            |   |            |    |   L  |    |   |  |_________    |   |    L   L\n" + "|                    |    |   |_________|   |   |            |            |   |            |    |    L      |   |            |   |   |     L   L\n" + "|____________________|    |_________________|   |____________|            |___|            |____|     L_____|   |____________|   |___|      L___L\n" + "\n" + "\n");
@@ -52,12 +34,30 @@ public class The_Costner_Trail
         
       
         
-        Quests selectedQuest = new Quests(name, gender);
+        
 
         if(choice == 1)
         {
           //System.out.println("\f"); tried to implemant clear screen;
-          selectedQuest.Quest1();
+          for (int i = 1; i < 3; i++) {
+            //                ^ this variable here will be updated as the number of quests increases
+            // a for loop is used to make the variable 'i' which is used to itterate through
+            // quests
+            if (i > 1) {
+              // this checks to see if i > 1 which means user has complete quest 1 and will be
+              // presented with a choice to continue
+              System.out.println("Do you want to continue to the next quest?\n(1)Yes\n(2)No");
+              final int continueQuest = input.nextInt();
+              if (continueQuest == 1) {
+                // this allows the user to continue playing quests until they choose no allowing
+                // them to end the game early
+                selectedQuest("name", 1, i);
+              }
+            } else if (i == 1) {
+              // this looks for the first iteration of i when i = 1 and starts quest 1
+              selectedQuest("name", 1, 1);
+            }
+          }
           currentQuest = 1;
         }
         else if(choice == 2)
@@ -66,24 +66,15 @@ public class The_Costner_Trail
         }
         else if(choice == 3)
         {
-          if(currentQuest == 1)
-          {
-            selectedQuest.Quest1();
-          }
-          
-          else if(currentQuest == 2)
-          {
-            selectedQuest.Quest2();
-          }
-          
-          else if(currentQuest == 3)
-          {
-            selectedQuest.Quest3();
-          }
-          
-          else if(currentQuest == 4)
-          {
-            selectedQuest.Quest4();
+          for (int i = currentQuest; i < 3; i++) {
+            if (i > 1) {
+              System.out.println("Do you want to continue to the next quest?\n(1)Yes\n(2)No");
+              final int continueQuest = input.nextInt();
+              selectedQuest(name, gender, i);
+            } else if (i == 1) {
+              // this looks for the first iteration of i when i = 1 and starts quest 1
+              selectedQuest("name", 1, 1);
+            }
           }
           
         }
