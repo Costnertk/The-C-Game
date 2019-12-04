@@ -2,7 +2,7 @@ import java.util.*;
 public class The_Costner_Trail
 {
   public static int currentQuest = 1;
-
+    
     public static void main(String[] ars)
     {
         Scanner input = new Scanner(System.in);
@@ -51,7 +51,7 @@ public class The_Costner_Trail
               if (continueQuest == 1) {
                 // this allows the user to continue playing quests until they choose no allowing
                 // them to end the game early
-                selectedQuest("name", 1, i);
+                Quests selectedQuests = new Quests(name, gender, i); 
               }
             } else if (i == 1) {
               // this looks for the first iteration of i when i = 1 and starts quest 1
@@ -66,12 +66,15 @@ public class The_Costner_Trail
         }
         else if(choice == 3)
         {
-          for (int i = currentQuest; i < 3; i++) {
-            if (i > 1) {
+          for (int i = currentQuest; i < 3; i++) 
+          {
+            if (i > 1)
+            {
               System.out.println("Do you want to continue to the next quest?\n(1)Yes\n(2)No");
               final int continueQuest = input.nextInt();
               selectedQuest(name, gender, i);
-            } else if (i == 1) {
+            } else if (i == 1) 
+            {
               // this looks for the first iteration of i when i = 1 and starts quest 1
               selectedQuest("name", 1, 1);
             }
