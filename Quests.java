@@ -5,6 +5,7 @@ public class Quests
     private String name;
     private int gender = 0;
     Scanner input = new Scanner(System.in);
+    public static int checkpoint = 0;
     
     public Quests(String theName, int theGender)
     {

@@ -24,7 +24,6 @@ public class The_Costner_Trail
         }
 
 
-
         
         //The cool shit
 
