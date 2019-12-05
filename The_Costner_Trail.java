@@ -15,7 +15,7 @@ public class The_Costner_Trail
         text.printTitle();
         
         System.out.println("1.Start game" + "\n" + "2.View Achievements" + "\n" + "3.Continue Game");
-        choice = input.nextInt();
+        int choice = input.nextInt();
         
       
         
