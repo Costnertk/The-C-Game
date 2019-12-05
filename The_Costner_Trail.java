@@ -36,11 +36,11 @@ public class The_Costner_Trail
               if (continueQuest == 1) {
                 // this allows the user to continue playing quests until they choose no allowing
                 // them to end the game early
-                Quests selectedQuests = new Quests(name, gender, i); 
+                Quests selectedQuest = new Quests(name, i); 
               }
             } else if (i == 1) {
               // this looks for the first iteration of i when i = 1 and starts quest 1
-              selectedQuest("name", 1, 1);
+              selectedQuest("name", 1);
             }
           }
           currentQuest = 1;
