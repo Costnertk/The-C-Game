@@ -9,7 +9,6 @@ public class Quests
     public Quests(String theName)
     {
         name = theName;
-        quest = theQuest;
     }
 
     public void runQuest(int questSelection)
