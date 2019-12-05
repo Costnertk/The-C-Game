@@ -14,6 +14,26 @@ public class Quests
         gender = theGender;
         quest = theQuest;
     }
+
+    public void runQuest(int questSelection)
+    {
+        //allows the use of one 'Quests' object in main but run multiple Quests
+        if(questSelection == 1)
+        {
+            Quest1();
+        }
+        else if(questSelection == 2)
+        {
+            Quest2();
+        }
+        else if(questSelection == 3)
+        {
+            Quest3();
+        }
+        
+        
+    }
+
     //restructuring of quests to encapsulate into if() allwoing single quest selecion via main
     //Quest I ("Just the beginning")
     public void Quest1()
