@@ -64,20 +64,14 @@ public class The_Costner_Trail
         {
           //Achievements menu
         }
+        //continue game
         else if(choice == 3)
         {
           for (int i = currentQuest; i < 3; i++) 
           {
-            if (i > 1)
-            {
               System.out.println("Do you want to continue to the next quest?\n(1)Yes\n(2)No");
               final int continueQuest = input.nextInt();
               selectedQuest(name, gender, i);
-            } else if (i == 1) 
-            {
-              // this looks for the first iteration of i when i = 1 and starts quest 1
-              selectedQuest("name", 1, 1);
-            }
           }
           
         }
