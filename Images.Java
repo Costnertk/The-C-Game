@@ -2,7 +2,9 @@ public class Images
 {
 
     //Might get rid of all this
+    public Images(){
 
+    }
 
     public void printTitle()
     {

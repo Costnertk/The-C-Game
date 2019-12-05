@@ -5,13 +5,13 @@ public class The_Costner_Trail
     
     public static void main(String[] ars)
     {
-      Images text = new Images(name);
+      Images text = new Images();
         Scanner input = new Scanner(System.in);
         //These statments will be encorperated into their own method as "character details"
         System.out.println("Menu Page");
         System.out.println("Enter the name you want for your character");
-        String name = input.nextLine();
-        Quests selectedQuest = new Quests(name);
+        String userName = input.nextLine();
+        Quests selectedQuest = new Quests(userName);
         text.printTitle();
         
         System.out.println("1.Start game" + "\n" + "2.View Achievements" + "\n" + "3.Continue Game");
