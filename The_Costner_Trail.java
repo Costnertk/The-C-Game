@@ -5,13 +5,13 @@ public class The_Costner_Trail
     
     public static void main(String[] ars)
     {
+      Images text = new Images(name);
         Scanner input = new Scanner(System.in);
-        Images text = new Images();
         //These statments will be encorperated into their own method as "character details"
         System.out.println("Menu Page");
         System.out.println("Enter the name you want for your character");
         String name = input.nextLine();
-        
+        Quests selectedQuest = new Quests(name);
         text.printTitle();
         
         System.out.println("1.Start game" + "\n" + "2.View Achievements" + "\n" + "3.Continue Game");
@@ -36,7 +36,7 @@ public class The_Costner_Trail
               if (continueQuest == 1) {
                 // this allows the user to continue playing quests until they choose no allowing
                 // them to end the game early
-                Quests selectedQuest = new Quests(name); 
+               
               }
             } else if (i == 1) {
               // this looks for the first iteration of i when i = 1 and starts quest 1
