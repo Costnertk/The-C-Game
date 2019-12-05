@@ -36,11 +36,11 @@ public class The_Costner_Trail
               if (continueQuest == 1) {
                 // this allows the user to continue playing quests until they choose no allowing
                 // them to end the game early
-                Quests selectedQuest = new Quests(name, i); 
+                Quests selectedQuest = new Quests(name); 
               }
             } else if (i == 1) {
               // this looks for the first iteration of i when i = 1 and starts quest 1
-              selectedQuest("name", 1);
+              selectedQuest.runQuest(1);
             }
           }
           currentQuest = 1;
@@ -56,7 +56,7 @@ public class The_Costner_Trail
           {
               System.out.println("Do you want to continue to the next quest?\n(1)Yes\n(2)No");
               final int continueQuest = input.nextInt();
-              selectedQuest(name, gender, i);
+              selectedQuest.runQuest(i);
           }
           
         }
