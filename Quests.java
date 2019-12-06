@@ -57,5 +57,7 @@ public class Quests
             System.out.println("You get out of the car and go into the house");
         }
         
+        //Choice 2
+        System.out.println("You enter the house and your friends Mathew, Costner, and John are playing video games in the living room\nYou ")
     }
 }
