@@ -20,7 +20,8 @@ public class Quests
         }    
     }
     //this method is fed each "decision to check if it is a 1 or 2 if it is not is continues to ask for a new input"
-    public int inputCheck(int choice){
+    public int inputCheck(int choice)
+    {
         while(true)
         {
             if(choice == 1)
