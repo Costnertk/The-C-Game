@@ -7,6 +7,10 @@ public class The_Costner_Trail
         System.out.println("Menu Page");
         System.out.println("Enter the name you want for your character");
         String name = input.nextLine();
+
+        StartGame game1 = new StartGame(name);
+
+        game1.startGame();
         
     }
 }
