@@ -1,7 +1,8 @@
 public class questRunner{
     private String name;
     public int num;
-    public questRunner(String theName)
+
+    public questRunner( String theName)
     {
         name = theName;
         num = 1;
@@ -15,7 +16,7 @@ public class questRunner{
         {
             selectedQuest.runQuest(i);
             num = i;
-            
+
         }
     }
 
