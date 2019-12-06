@@ -17,17 +17,28 @@ public class Quests
         if(questSelection == 1)
         {
             Quest1();
-        }
-        else if(questSelection == 2)
+        }    
+    }
+    //this method is fed each "decision to check if it is a 1 or 2 if it is not is continues to ask for a new input"
+    public int inputCheck(int choice){
+        while(true)
         {
-            Quest2();
+            if(choice == 1)
+            {
+                System.out.println("entered1");
+                return choice;
+            }
+            else if(choice == 2)
+            {
+                System.out.println("entered2");
+                return choice;
+            }
+            else
+            {
+                System.out.println("Not a valid Input. Please try again.");
+                choice = input.nextInt();
+            }
         }
-        else if(questSelection == 3)
-        {
-            Quest3();
-        }
-        
-        
     }
 
     //restructuring of quests to encapsulate into if() allwoing single quest selecion via main
@@ -37,23 +48,14 @@ public class Quests
         //Choice 1
         System.out.println("It's a dark and stormy night as " + name + " drives home from work...\n1.Park car on the street\n2.Park car in garage");
         int userInput = input.nextInt(); 
-        while(true)
+        userInput = inputCheck(userInput);
+        if(userInput == 1){
+            System.out.println("You run out of your car as fast as you can since you forgot your umbrella again");
+        }
+        else
         {
-            if(userInput == 1)
-            {
-                System.out.println("entered1");
-                break;
-            }
-            else if(userInput == 2)
-            {
-                System.out.println("entered2");
-                break;
-            }
-            else
-            {
-                System.out.println("Not a valid Input. Please try again.");
-                userInput = input.nextInt();
-            }
+            System.out.println("You get out of the car and go into the house");
         }
         
     }
+}
