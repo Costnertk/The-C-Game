@@ -7,8 +7,6 @@ public class The_Costner_Trail
     System.out.println("Enter the name you want for your character");
      String name = input.nextLine();
     Quests questSelector = new Quests(name);
-      for(int i = 1; i < 3; i++){
-        questSelector.runQuest(i);
-      }
+        questSelector.runQuest(1);
     }
 }
