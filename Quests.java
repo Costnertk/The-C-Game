@@ -58,6 +58,6 @@ public class Quests
         }
         
         //Choice 2
-        System.out.println("You enter the house and your friends Mathew, Costner, and John are playing video games in the living room\nYou ")
+        System.out.println("You enter the house and your friends Mathew, Costner, and John are playing video games in the living room\nYou ");
     }
 }
