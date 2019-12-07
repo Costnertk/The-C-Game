@@ -1,4 +1,6 @@
 import java.util.*;
+
+import javax.lang.model.util.ElementScanner6;
 public class Quests
 {
     //list quests here and select quests here
@@ -26,12 +28,10 @@ public class Quests
         {
             if(choice == 1)
             {
-                System.out.println("entered1");
                 return choice;
             }
             else if(choice == 2)
             {
-                System.out.println("entered2");
                 return choice;
             }
             else
@@ -48,15 +48,19 @@ public class Quests
     {
         //Choice 1
         System.out.println("It's a dark and stormy night as " + name + " drives home from work...\n1.Park car on the street\n2.Park car in garage");
-        int userInput = input.nextInt(); 
+        String userInput = input.nextLine(); 
         userInput = inputCheck(userInput);
-        if(userInput == 1){
+        if(userInput.equals("1"))
+        {
+            Images.clearScreen();
             System.out.println("You run out of your car as fast as you can since you forgot your umbrella again");
         }
         else
         {
+            Images.clearScreen();
             System.out.println("You get out of the car and go into the house");
         }
+        
         
         //Choice 2
         System.out.println("You enter the house and your friends Mathew, Costner, and John are playing video games in the living room\nYou ");
