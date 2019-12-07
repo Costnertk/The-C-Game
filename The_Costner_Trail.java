@@ -32,6 +32,7 @@ public class The_Costner_Trail
             {
                 Images.clearScreen();
                 game1.startGame();
+                Images.clearScreen();
             }
 
             // Continue Game
@@ -39,6 +40,7 @@ public class The_Costner_Trail
             {
                 Images.clearScreen();
                 System.out.println("this does nothing right now");
+                Images.clearScreen();
             }
 
             // Load Game 
@@ -46,6 +48,7 @@ public class The_Costner_Trail
             {
                 Images.clearScreen();
                 System.out.println("this does nothing right now");
+                Images.clearScreen();
             }
 
             // loop should only break when user choses to quit game
@@ -60,10 +63,9 @@ public class The_Costner_Trail
             else
             {
                 System.out.println("Not a valid input. Please try againg.");
-                userInput = input.nextLine();
+                Images.clearScreen();
             }
-
-
+            
         }
     }
 }
