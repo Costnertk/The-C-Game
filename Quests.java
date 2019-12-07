@@ -1,6 +1,4 @@
 import java.util.*;
-
-import javax.lang.model.util.ElementScanner6;
 public class Quests
 {
     //list quests here and select quests here
@@ -22,22 +20,22 @@ public class Quests
         }    
     }
     //this method is fed each "decision to check if it is a 1 or 2 if it is not is continues to ask for a new input"
-    public int inputCheck(int choice)
+    public String inputCheck(String choice)
     {
         while(true)
         {
-            if(choice == 1)
+            if(choice.equals("1"))
             {
                 return choice;
             }
-            else if(choice == 2)
+            else if(choice.equals("2"))
             {
                 return choice;
             }
             else
             {
                 System.out.println("Not a valid Input. Please try again.");
-                choice = input.nextInt();
+                choice = input.nextLine();
             }
         }
     }
