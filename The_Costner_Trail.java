@@ -11,36 +11,38 @@ public class The_Costner_Trail
 
         StartGame game1 = new StartGame(name);
 
-        game1.startGame();
-        
         while(true)
         {
-            // main menu while loop
+
+
+            // MAIN MENU ___________________________________
             
             // Images needs to be implimented to print main menu
 
-            // primts out menu options
+            // prints out menu options
             System.out.println("1.Start game" + "\n2.Continue Game" + "\n3.Load Game" + "\n4.Quit Game");
             userInput = input.nextLine();
+
+            
 
             // Logic trees for menu
 
             // Start game
             if(userInput.equals("1"))
             {
-
+                game1.startGame();
             }
 
             // Continue Game
             else if(userInput.equals("2"))
             {
-
+                System.out.println("this does nothing right now");
             }
 
             // Load Game 
             else if(userInput.equals("3"))
             {
-
+                System.out.println("this does nothing right now");
             }
 
             // loop should only break when user choses to quit game
@@ -50,9 +52,11 @@ public class The_Costner_Trail
                 break;
             }
 
+            // If input meets no parameters it will ask for user to input again
             else
             {
                 System.out.println("Not a valid input. Please try againg.");
+                userInput = input.nextLine();
             }
 
 
