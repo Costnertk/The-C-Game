@@ -9,7 +9,8 @@ public class The_Costner_Trail
         String name = input.nextLine();
         String userInput;
 
-        StartGame game1 = new StartGame(name);
+        StartGame Sgame = new StartGame(name);
+        ContinueGame Cgame = new ContinueGame(name);
 
         while(true)
         {
@@ -31,7 +32,7 @@ public class The_Costner_Trail
             if(userInput.equals("1"))
             {
                 Images.clearScreen();
-                game1.startGame();
+                Sgame.startGame();
                 Images.clearScreen();
             }
 
@@ -39,7 +40,7 @@ public class The_Costner_Trail
             else if(userInput.equals("2"))
             {
                 Images.clearScreen();
-                System.out.println("this does nothing right now");
+                Cgame.continueGame();
                 Images.clearScreen();
             }
 
