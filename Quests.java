@@ -4,7 +4,7 @@ public class Quests
     //list quests here and select quests here
     private String name;
     Scanner input = new Scanner(System.in);
-    public static int checkpoint = 0;
+    public static int checkpoint = 1;
     
     public Quests(String theName)
     {
@@ -15,6 +15,14 @@ public class Quests
     {
         //allows the use of one 'Quests' object in main but run multiple Quests
         if(questSelection == 1)
+        {
+            Quest1();
+        }   
+        if(questSelection == 2)
+        {
+            Quest1();
+        }   
+        if(questSelection == 3)
         {
             Quest1();
         }    
@@ -57,10 +65,13 @@ public class Quests
         {
             Images.clearScreen();
             System.out.println("You get out of the car and go into the house");
-        }
-        
+        }        
         
         //Choice 2
-        System.out.println("You enter the house and your friends Mathew, Costner, and John are playing video games in the living room\nYou ");
+        System.out.println("You enter the house and your friends Mathew, Costner, and John are playing video games in the living room. You... ");
+
+
+        //finish quest 1 checkpoint = 2
+        checkpoint = 2;
     }
 }
