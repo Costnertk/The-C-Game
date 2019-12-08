@@ -52,6 +52,8 @@ public class Quests
     //Quest I ("Just the beginning")
     public void Quest1()
     {
+        //START QUEST 1______________________________________________________________________________________________________________________________________________
+        
         //Choice 1
         System.out.println("It's a dark and stormy night as " + name + " drives home from work...\n1.Park car on the street\n2.Park car in garage");
         String userInput = input.nextLine(); 
@@ -64,14 +66,132 @@ public class Quests
         else
         {
             Images.clearScreen();
-            System.out.println("You get out of the car and go into the house");
+            System.out.println("You get out of the car and go into the house.");
         }        
         
         //Choice 2
-        System.out.println("You enter the house and your friends Mathew, Costner, and John are playing video games in the living room. You... ");
+        System.out.println("You enter the house and your friends Mathew, Costner, and John are playing video games in the living room. You... " + "\n1.Make Dinner\n2.Sit down in the living room");
+        userInput = input.nextLine(); 
+        userInput = inputCheck(userInput);
+        if(userInput.equals("1"))
+        {
+            
+            Images.clearScreen();
+            System.out.println("You enter the Kitchen. You..." + "\n1.Open the pantry\n2.Go open the fridge");
+            userInput = input.nextLine(); 
+            userInput = inputCheck(userInput);
+            
+            //Choice 2A
+            if(userInput.equals("1"))
+            {
+                
+                Images.clearScreen();
+                System.out.println("You open the pantry all you have left is potato chips and pop tarts. You grab the..." + "\n1.Potato Chips\n2.Pop Tarts");
+                userInput = input.nextLine(); 
+                userInput = inputCheck(userInput);
 
+                //Choice 2AA
+                if(userInput.equals("1"))
+                {
+                    Images.clearScreen();
+                    System.out.println("You chose to have potato chips for dinner.");
+                
+            
+                }
+                else
+                {
+                    Images.clearScreen();
+                    System.out.println("You chose to have pop tarts for dinner.");
+                }  
+            
+            }
+            else
+            {
+                
+                Images.clearScreen();
+                System.out.println("You open the fridge and there is some lunch meat, cheese, and eggs. You decide to make..." + "\n1. A Sandwich\n2.Scrambled Eggs");
+                userInput = input.nextLine(); 
+                userInput = inputCheck(userInput);
 
+                //Choice 2AB
+                if(userInput.equals("1"))
+                {
+                    Images.clearScreen();
+                    System.out.println("You chose to have a sandwich for dinner.");
+                
+            
+                }
+                else
+                {
+                    Images.clearScreen();
+                    System.out.println("You chose to have scrambled eggs for dinner.");
+                }  
+
+            }      
+            System.out.println("You eat your dinner. It's almost 11 o'clock.");
+        }
+        else
+        {
+            
+            Images.clearScreen();
+            System.out.println("You sit down on the couch. Mathew, Costner, and John are playing Halo Reach. You..." + "\n1.Ask to join the game\n2.You sit and talk with them");
+            userInput = input.nextLine(); 
+            userInput = inputCheck(userInput);
+
+            //Choice 2B
+            if(userInput.equals("1"))
+            {
+                
+                Images.clearScreen();
+                System.out.println("You ask to join the game. You choose to play..." + "\n1.Custom Games\n2.Infection");
+                userInput = input.nextLine(); 
+                userInput = inputCheck(userInput);
+
+                //Choice 2AB
+                if(userInput.equals("1"))
+                {
+                    Images.clearScreen();
+                    System.out.println("You chose to play custom Games.");
+                
+            
+                }
+                else
+                {
+                    Images.clearScreen();
+                    System.out.println("You chose to play Infection.");
+                }
+            
+            }
+            else
+            {
+                
+                Images.clearScreen();
+                System.out.println("You..." + "\n1.Talk about work\n2.Ask how their day was");
+                userInput = input.nextLine(); 
+                userInput = inputCheck(userInput);
+                
+                //Choice 2AB
+                if(userInput.equals("1"))
+                {
+                    Images.clearScreen();
+                    System.out.println("You tell them about your boring day at work. You talk for a while until about midnight.");
+                
+            
+                }
+                else
+                {
+                    Images.clearScreen();
+                    System.out.println("They tell you they havent done much all day other than play Halo. You talk for a while until about midnight.");
+                }
+            }      
+        }     
+        
+        //End of Quest 1
+        System.out.println("You are tired and decide to go to bed.");
+        
         //finish quest 1 checkpoint = 2
         checkpoint = 2;
+
+        //END QUEST 1 ________________________________________________________________________________________________________________________________
     }
 }
