@@ -61,7 +61,7 @@ public class Quests
         if(userInput.equals("1"))
         {
             Images.clearScreen();
-            System.out.println("You run out of your car as fast as you can since you forgot your umbrella again");
+            System.out.println("You run out of your car as fast as you can since you forgot your umbrella again.");
         }
         else
         {
@@ -109,7 +109,7 @@ public class Quests
             {
                 
                 Images.clearScreen();
-                System.out.println("You open the fridge and there is some lunch meat, cheese, and eggs. You decide to make..." + "\n1. A Sandwich\n2.Scrambled Eggs");
+                System.out.println("You open the fridge and there is some lunch meat, cheese, and eggs. You decide to make..." + "\n1.A Sandwich\n2.Scrambled Eggs");
                 userInput = input.nextLine(); 
                 userInput = inputCheck(userInput);
 
