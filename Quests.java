@@ -70,7 +70,7 @@ public class Quests
         }        
         
         //Choice 2
-        System.out.println("You enter the house and your friends Mathew, Costner, and John are playing video games in the living room. You... " + "\n1.Make Dinner\n2.Sit down in the living room");
+        System.out.println("You enter the house and your friends Matthew, Costner, and John are playing video games in the living room. You... " + "\n1.Make Dinner\n2.Sit down in the living room");
         userInput = input.nextLine(); 
         userInput = inputCheck(userInput);
         if(userInput.equals("1"))
@@ -134,7 +134,7 @@ public class Quests
         {
             
             Images.clearScreen();
-            System.out.println("You sit down on the couch. Mathew, Costner, and John are playing Halo Reach. You..." + "\n1.Ask to join the game\n2.You sit and talk with them");
+            System.out.println("You sit down on the couch. Matthew, Costner, and John are playing Halo Reach. You..." + "\n1.Ask to join the game\n2.You sit and talk with them");
             userInput = input.nextLine(); 
             userInput = inputCheck(userInput);
 
